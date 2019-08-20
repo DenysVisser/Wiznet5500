@@ -651,7 +651,7 @@ class W5500.Driver {
 
         // Set the default mac address
         if (_setMac){
-            setSourceHWAddr(imp.getmacaddress(), true);
+            setSourceHWAddr(imp.net.info(), true);
         }
 
         // Set the defaults
